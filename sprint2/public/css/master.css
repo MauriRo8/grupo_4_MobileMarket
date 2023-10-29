@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #020202;
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconos {
+    color: #fff
+}
+
+.logoMM {
+    width: 10%;
+}
+
+nav ul{
+    display: flex;
+    font-size: 8px;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+nav ul li{
+    width: 20%;
+}
