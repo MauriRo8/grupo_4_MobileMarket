@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="/css/master.css">
     <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -45,21 +48,21 @@
     </header>
 
     <main>
-        <section>
-            <article class="article-1">
-                <div>
+        <section class="seccionproducto">
+            <article class="article-producto contenedor-imagenes" >
+                <div class="imagenes-productos">
                     <img src="/images/productos/iphone13-camara.png" alt="">
                     <img src="/images/productos/iphone13-colores.png" alt="">
                     <img src="/images/productos/iphone13-diagonal.png" alt="">
                     <img src="/images/productos/iphone13-superior.png" alt="">
                 </div>
             </article>
-            <article class="article-2">
+            <article class="article-producto contenedor-foto">
                 <img class="img-article" src="/images/productos/iphone13-frontal.png" alt="">
             </article>
-            <article class="article-3">
-                <h2 class="titulo-producto"></h2>
-                <p class="precio-producto"></p>
+            <article class="article-producto contenedor-detalle">
+                <h2 class="titulo-producto"> Iphone13</h2>
+                <p class="precio-producto">$800.000</p>
                 <p>Elegí el color:</p>
                 <form action="">
                     <input type="radio" name="rojo">
@@ -76,11 +79,74 @@
                     <input type="radio" name="256gb">
                     <label for="256gb">4gb / 256gb</label>
                 </form>
+
+                <p>Ficha Tecnica</p>
+                <p>Valoraciones</p>
+
             </article>
-            <article class="article-4">
+
+            <article class="article-producto contenedor-pago">
+                <form>
+                    <p>Formas de Pago</p>
+                    <label>
+                        <input type="radio" name="metodoPago" value="tarjetaCredito"> Tarjeta de Crédito
+                    </label>
+                    <div id="opcionesTarjetaCredito" class="opciones">
+                        <label>
+                            <input type="radio" name="tarjetaCreditoTipo" value="visa"> Visa
+                        </label>
+                        <label>
+                            <input type="radio" name="tarjetaCreditoTipo" value="mastercard"> Mastercard
+                        </label>
+                        <label>
+                            <input type="radio" name="tarjetaCreditoTipo" value="naranja"> Naranja
+                        </label>
+                    </div>
+                    <label>
+                        <input type="radio" name="metodoPago" value="efectivo"> Efectivo
+                    </label>
+                    <div id="opcionesEfectivo" class="opciones">
+                        <label>
+                            <input type="radio" name="efectivoTipo" value="pagofacil"> Pago Facil
+                        </label>
+                        <label>
+                            <input type="radio" name="efectivoTipo" value="rapipago"> RapiPago
+                        </label>
+                        <input type="radio" name="efectivoTipo" value="transferenciaBancaria"> Transferencia Bancaria
+                    </label>
+                    </div>
+                
+                    <div class="envio">
+                    <p>Formas de envio:</p>
+                        <input type="radio" name="envio-normal">
+                        <label for="envio-normal">Envio Normal</label>
+                        <input type="radio" name="envio-express">
+                        <label for="envio-express">Envio Express</label>
+                    </form>
+
+                    </div>
+
+                    
+                        <input type="submit" class='boton-carrito' value="Agregar al Carrito">
+                    
+
+                </form>
+                </div>
+
 
             </article>
         </section>
+        <section class="caja-relacionados">
+        <h2>Productos y Accesorios Relacionados </h2>
+
+        <div class="relacionados">
+            <img src="/images/productos/relacionado1.jpeg" alt="">
+                    <img src="/images/productos/relacionado2.jpeg" alt="">
+                    <img src="/images/productos/relacionado3.jpeg".jpeg="">
+                    <img src="/images/productos/relacionado4.jpeg" alt="">
+
+        </div>
+    </section>
     </main>
 
     <footer>
