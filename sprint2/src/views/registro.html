@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/registro.css" rel="stylesheet">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_nav">
+            <figure class="logoMM"><img src="/images/logo_Mobile_Market.jpg" alt='logo'></figure>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="item_nav"><a href="#">Inicio</a></li>
+                <li class="item_nav"><a href="#">Moviles</a></li>
+                <li class="item_nav"><a href="#">Accesorios</a></li>
+                <li class="item_nav"><a href="#">Servicio técnico</a></li>
+                <li class="item_nav"><a href="#">Registrate</a></li>
+                <li class="item_nav"><a href="#">Ayuda</a></li>
+                <li class="item_nav"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class='iconos'>
+            <div class="icon_search">
+                <i class="fa-solid fa-magnifying-glass">
+                </i>
+            </div>
+
+            <div class="icon_shopping_cart">
+                <i class="fa-solid fa-cart-shopping">
+                </i>
+            </div>
+
+            <div class="icon_user">
+                <i class="fa-solid fa-user">
+                </i>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="cuerpo_principal">
+            <div class="signupFrm">
+                <form action="/registro" method='POST' class="form">
+                    <h1 class="title">Formulario de registro</h1>
+
+                    <div class="inputContainer">
+                        <input type="email" name='email' class="input" placeholder="a">
+                        <label for="email" class="label">E-mail</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" name='nombredeusuario' class="input" placeholder="a">
+                        <label for="nombredeusuario" class="label">Nombre de usuario</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="password" name='contraseña' class="input" placeholder="a">
+                        <label for="contraseña" class="label">Contraseña</label>
+                    </div>
+
+                    <div class="inputContainer">
+                        <input type="text" name='confirmarContraseña' class="input" placeholder="a">
+                        <label for="confirmarContraseña" class="label">Confirmar contraseña</label>
+                    </div>
+
+                    <input type="submit" class="submitBtn" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="link_footer">
+            <p class="text_footer_informacion">Informacion</p>
+            <ul class="footer_menu">
+                <li>
+                    <a href="#">Términos y condiciones</a>
+                </li>
+                <li>
+                    <a href="#">¿Como comprar?</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text_container text_footer">
+            <p>Envios a todo el pais<br>proximamente envios internacionales</p>
+        </div>
+
+        <div class="social_networks">
+            <div class="div_button_facebook">
+                <a href="#">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </div>
+            <div class="div_button_twitter">
+                <a href="#">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+            </div>
+            <div class="div_button_instagram">
+                <a href="#">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
