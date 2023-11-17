@@ -10,14 +10,21 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 app.listen(8000, () => console.log('Servidor corriendo'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'));
+   res.sendFile(path.join(__dirname, '/views/home.html'));
 })
+
 app.get('/producto', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/producto.html'));
+   res.sendFile(path.join(__dirname, '/views/producto.html'));
 })
+
 app.get('/carrito', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/carrito.html'));
+   res.sendFile(path.join(__dirname, '/views/carrito.html'));
 })
+
 app.get('/registro', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/registro.html'));
+   res.sendFile(path.join(__dirname, '/views/registro.html'));
+})
+
+app.get('/login', (req, res) => {
+   res.sendFile(path.join(__dirname, '/views/login.html'));
 })

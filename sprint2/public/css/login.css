@@ -140,14 +140,14 @@ div.text_footer p {
     width: 100%;
     max-width: 450px;
     background-color: #272626;
-    padding: 30px 40px 50px;
+    padding: 40px 40px 50px;
     text-align: center;
     border-radius: 30px;
 }
 
 .form-content h1 {
     font-size: 30 px;
-    margin-bottom: 40px ;
+    margin-bottom: 30px ;
     color: white;
     position: relative;
 
@@ -167,7 +167,7 @@ div.text_footer p {
 
 .input-field {
     background-color: #4e4c4c;
-    margin: 15px 0;
+    margin: 20px 0;
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -197,6 +197,7 @@ form p{
     color: white;
     text-align: center;
     font-size: 13px;
+    padding-top: 3px;
 }
 
 form p a {
@@ -208,6 +209,8 @@ form p a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 3px;
+    
 }
 
 .btn-field button {
@@ -222,7 +225,7 @@ form p a {
     transition: all 0.5s;
 }
 .input-group {
-    height: 300px;
+    height: 250px;
 }
 
 button#signUp:hover {

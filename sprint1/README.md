@@ -24,3 +24,7 @@
 - https://www.samsung.com/ar/
 
 Elegimos estos sitios ya que son lideres de mercado y tienen un diseño amigable. Todos tienen atributos en común como su logo, una barra de busqueda, la opción de loguearse, colores representativos de la marca.
+
+
+
+TABLERO DE TRABAJO: https://trello.com/b/Tc0c0R0M/mobilemarket-s2
