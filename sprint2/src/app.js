@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+const routes = require("./routes/routes");
 //elementos estaticos
 
 app.use(express.static(path.resolve(__dirname, '../public')));
@@ -9,22 +10,8 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 //levantamos el sv
 app.listen(8000, () => console.log('Servidor corriendo'));
 
-app.get('/', (req, res) => {
-   res.sendFile(path.join(__dirname, '/views/home.html'));
-})
 
-app.get('/producto', (req, res) => {
-   res.sendFile(path.join(__dirname, '/views/producto.html'));
-})
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-app.get('/carrito', (req, res) => {
-   res.sendFile(path.join(__dirname, '/views/carrito.html'));
-})
-
-app.get('/registro', (req, res) => {
-   res.sendFile(path.join(__dirname, '/views/registro.html'));
-})
-
-app.get('/login', (req, res) => {
-   res.sendFile(path.join(__dirname, '/views/login.html'));
-})
+app.use("/", routes);
