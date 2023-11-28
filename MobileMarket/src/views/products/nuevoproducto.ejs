@@ -1,0 +1,53 @@
+<html lang="en">
+<%-include("../partials/head")%>
+<link rel="stylesheet" href="/css/nuevoproducto.css">
+
+    <body>
+        <%-include('../partials/header')%>
+            <main>
+                <div class="container">
+                    <div class="form-content">
+                        <h1 id="title">Agregar Producto</h1>
+                        <br>
+                        <form action="/creaciondeproducto" method="POST">
+                            <div class="input-group">
+                                <div class="input-field" id="nameImput">
+                                    <input type="text" placeholder="Nombre del producto">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="textarea" placeholder="Descripción">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Imagen de producto</label>
+                                    <input type="file" name="Imagen de producto" accept=".jpg,.png" multiple>
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Categoría">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Precio">
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="btn-field">
+                                <button id="signUp" type="button">Cancelar</button>
+                                <button id="signIn" type="button" class="disable">Crear</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    </h2>
+            </main>
+            <%-include("../partials/footer")%>
+    </body>
+
+</html>
