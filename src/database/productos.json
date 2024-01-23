@@ -1,0 +1,22 @@
+[
+  {
+    "id": 5,
+    "nombre": "Motorola G52",
+    "descripcion": "Celular de Alvaro",
+    "categoria": "Celulares",
+    "precio": "200",
+    "descuento": "",
+    "color": "Negro",
+    "memoria": "128Gb"
+  },
+  {
+    "id": 6,
+    "nombre": "Celular de Mauri",
+    "descripcion": "Mi celular",
+    "categoria": "Celulares",
+    "precio": "300",
+    "descuento": "",
+    "color": "Blanco",
+    "memoria": "256Gb"
+  }
+]

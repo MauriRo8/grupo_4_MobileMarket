@@ -11,7 +11,6 @@
 /*Estilos del Formulario*/
 .container{
     width: 100%;
-    height: 100vh;
     background-color: #5c5a5a;
     display: flex;
     align-items: center;
@@ -22,14 +21,16 @@
     width: 100%;
     max-width: 450px;
     background-color: #272626;
-    padding: 30px 40px 50px;
+    padding: 30px 40px 20px;
     text-align: center;
     border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .form-content h1 {
     font-size: 30 px;
-    margin-bottom: 40px ;
+    margin-bottom: 20px ;
     color: white;
     position: relative;
 
@@ -102,6 +103,8 @@ form p a {
     border: 0;
     outline: 0;
     transition: all 0.5s;
+    margin-top: 200px;
+
 }
 .input-group {
     height: 300px;

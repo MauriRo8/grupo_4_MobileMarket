@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "nombre": "Mauricio",
+        "apellido": "Romano",
+        "email": "mauriro@dh.com",
+        "contraseña": "12345678",
+        "categoria": "vendedor",
+        "imagen": ""
+    },
+    {
+        "id": "",
+        "nombre": "Gabriela",
+        "apellido": "Paz",
+        "email": "gabipaz@dh.com",
+        "contraseña": "1598520147",
+        "categoria": "vendedor",
+        "imagen": ""
+    },
+    {
+        "id": "3",
+        "nombre": "Alvaro",
+        "apellido": "Barquin",
+        "email": "alvarobc@dh.com",
+        "contraseña": "147258369",
+        "categoria": "vendedor",
+        "imagen": ""
+    }
+]

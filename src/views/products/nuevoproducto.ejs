@@ -1,6 +1,6 @@
-<html lang="en">
+<html lang="es">
 <%-include("../partials/head")%>
-<link rel="stylesheet" href="/css/nuevoproducto.css">
+    <link rel="stylesheet" href="/css/nuevoproducto.css">
 
     <body>
         <%-include('../partials/header')%>
@@ -9,43 +9,55 @@
                     <div class="form-content">
                         <h1 id="title">Agregar Producto</h1>
                         <br>
-                        <form action="/creaciondeproducto" method="POST">
+
+
+                        <form action="/create" method="POST" >
                             <div class="input-group">
                                 <div class="input-field" id="nameImput">
-                                    <input type="text" placeholder="Nombre del producto">
+                                    <input type="text" placeholder="Nombre del producto" name="nombre">
                                 </div>
 
                                 <div class="input-field">
-                                    <input type="textarea" placeholder="Descripción">
+                                    <input type="textarea" placeholder="Descripción" name="descripcion">
+                                </div>
+
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Categoría" name="categoria">
                                 </div>
 
                                 <div class="input-field">
-                                    <label>Imagen de producto</label>
-                                    <input type="file" name="Imagen de producto" accept=".jpg,.png" multiple>
+                                    <input type="text" placeholder="Precio" name="precio">
                                 </div>
 
                                 <div class="input-field">
-                                    <input type="text" placeholder="Categoría">
+                                    <input type="text" placeholder="Descuento" name="descuento">
                                 </div>
 
                                 <div class="input-field">
-                                    <input type="text" placeholder="Precio">
+                                    <input type="text" placeholder="Color" name="color">
                                 </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Memoria" name="memoria">
+                                </div>
+
                             </div>
                             <br>
                             <br>
 
                             <div class="btn-field">
                                 <button id="signUp" type="button">Cancelar</button>
-                                <button id="signIn" type="button" class="disable">Crear</button>
+                                <button id="signIn" type="submit" class="disable">Crear</button>
 
                             </div>
 
                         </form>
 
                     </div>
+                </div>
 
-                    </h2>
+                </h2>
             </main>
             <%-include("../partials/footer")%>
     </body>
