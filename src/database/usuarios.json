@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "nombre": "Mauricio",
+    "apellido": "Romano",
+    "email": "mauriro@dh.com",
+    "contraseña": "12345678",
+    "categoria": "vendedor",
+    "imagen": ""
+  },
+  {
+    "id": "",
+    "nombre": "Gabriela",
+    "apellido": "Paz",
+    "email": "gabipaz@dh.com",
+    "contraseña": "1598520147",
+    "categoria": "vendedor",
+    "imagen": ""
+  },
+  {
+    "id": "3",
+    "nombre": "Alvaro",
+    "apellido": "Barquin",
+    "email": "alvarobc@dh.com",
+    "contraseña": "147258369",
+    "categoria": "vendedor",
+    "imagen": ""
+  },
+  {
+    "nombre": "aitana",
+    "apellido": "barquin",
+    "email": "aitana@gmail.com",
+    "password": "$2a$10$C2pGazp9bWI.pKkTZeaJ3eFsXzfv48Uw5y0N5n0puOrJmLJEKN2UK",
+    "categoria": "dueña"
+  },
+  {
+    "nombre": "anton",
+    "apellido": "barquin",
+    "email": "anton@gmail.com",
+    "password": "$2a$10$EPUl0D/.EYz8bMYN5DpW9OhO3zbeUqMg/2ci92Ef7eD6BbMC/RnYG",
+    "categoria": "jefe"
+  },
+  {
+    "nombre": "virginia",
+    "apellido": "bruchmann",
+    "email": "virginia@gmial.com",
+    "password": "$2a$10$1XKaVLFaM5R/a8Z19Hj02eVAPIylgvbHxrY7CAuy9jMq7dqtRi5K.",
+    "categoria": "empleada"
+  },
+  {
+    "nombre": "laila",
+    "apellido": "barquin",
+    "email": "laila@gmail.com",
+    "password": "$2a$10$6Afp9EmA8pJshWVFOp7HLOJ8TKkiv3aohwZsHxFMs78hfa6XqRPVi",
+    "categoria": "vendedora",
+    "foto": "1707096883292_img.png"
+  }
+]

@@ -1,0 +1,71 @@
+<html lang="es">
+<%-include("../partials/head")%>
+    <link rel="stylesheet" href="/css/nuevoproducto.css">
+
+    <body>
+        <%-include('../partials/header')%>
+            <main>
+                <div class="container">
+                    <div class="form-content">
+                        <h1 id="title">Agregar Producto</h1>
+                        <br>
+
+
+                        <form action="/create" method="POST"  enctype="multipart/form-data">
+                            <div class="input-group">
+                                <div class="input-field" id="nameImput">
+                                    <input type="text" placeholder="Nombre del producto" name="nombre">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="textarea" placeholder="Descripción" name="descripcion">
+                                </div>
+
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Categoría" name="categoria">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Precio" name="precio">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Descuento" name="descuento">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Color" name="color">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Memoria" name="memoria">
+                                </div>
+
+                                <label for="image" class="input-field" style="padding: 15px;">Imagen del producto</label>
+                            <input type="file" name='image' id='image' style="margin-top: -25px;">
+                           
+
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                            <div class="btn-field">
+                                <button id="signUp" type="button">Cancelar</button>
+                                <button id="signIn" type="submit" class="disable">Crear</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+                </h2>
+            </main>
+            <%-include("../partials/footer")%>
+    </body>
+
+</html>

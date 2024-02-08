@@ -1,0 +1,67 @@
+
+<html lang="es">
+<%-include("../partials/head")%>
+    <link rel="stylesheet" href="/css/editarproducto.css">
+        <link rel="stylesheet" href="/css/master.css">
+
+    <body>
+        <%-include('../partials/header')%>
+            <main>
+                <div class="container">
+                    <div class="form-content">
+                        <h1 id="title">Actualizar Producto</h1>
+                        <br>
+
+
+                        <form action="/edit/ <%= productoEditar.id %>?_method=PUT" method="POST" >
+                            <div class="input-group">
+                                <div class="input-field" id="nameImput">
+                                    <input type="text" placeholder="Nombre del producto" name="nombre" value="<%= productoEditar.nombre %>">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="textarea" placeholder="Descripción" name="descripcion" value="<%= productoEditar.descripcion %>">
+                                </div>
+
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Categoría" name="categoria" value="<%= productoEditar.categoria %>">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Precio" name="precio" value="<%= productoEditar.precio %>">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Descuento" name="descuento" value="<%= productoEditar.descuento %>">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Color" name="color" value="<%= productoEditar.color %>">
+                                </div>
+
+                                <div class="input-field">
+                                    <input type="text" placeholder="Memoria" name="memoria" value="<%= productoEditar.memoria %>">
+                                </div>
+
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="btn-field">
+                                <button id="signUp" type="button">Cancelar</button>
+                                <button id="signIn" type="submit" class="disable">Actualizar</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+                </h2>
+            </main>
+            <%-include("../partials/footer")%>
+    </body>
+
+</html>

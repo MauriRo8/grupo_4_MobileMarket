@@ -1,0 +1,43 @@
+[
+  {
+    "id": 5,
+    "nombre": "Motorola G52",
+    "descripcion": "Celular de Alvaro",
+    "categoria": "Celulares",
+    "precio": "200",
+    "descuento": "",
+    "color": "Negro",
+    "memoria": "128Gb"
+  },
+  {
+    "id": 6,
+    "nombre": "Celular de Mauri",
+    "descripcion": "Mi celular",
+    "categoria": "Celulares",
+    "precio": "300",
+    "descuento": "",
+    "color": "Blanco",
+    "memoria": "256Gb"
+  },
+  {
+    "id": 9,
+    "nombre": "moto",
+    "descripcion": "62",
+    "categoria": "",
+    "precio": "399",
+    "descuento": "",
+    "color": "",
+    "memoria": ""
+  },
+  {
+    "id": 10,
+    "nombre": "xiomi",
+    "descripcion": "note 9 ",
+    "categoria": "",
+    "precio": "150000",
+    "descuento": "",
+    "color": "negro",
+    "memoria": "256",
+    "image": "1707098505942_img.jpg"
+  }
+]

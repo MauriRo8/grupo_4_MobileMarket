@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%-include("../partials/head")%>
+    <link href="css/registro.css" rel="stylesheet">
+
+    <body>
+        <%-include("../partials/header")%>
+
+
+            <main>
+
+                <div class="container">
+                    <div class="form-content">
+                        <h1 id="title">Registrate</h1>
+                        <br>
+                            
+                            <% if(typeof(errors) != 'undefined'){%>
+                           <ul class="alert alert-danger">
+                              <% errors.forEach(error => { %>
+                                 <li><%= error.msg%></li>
+                              <%});%>
+                            </ul>
+                        <%}%>  
+
+                        <form action= "/registro" method="post" enctype="multipart/form-data">
+                            <div class="input-group">
+                                <div class="input-field" id="nameImput">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" placeholder="Nombre" name = 'nombre' value="<%= typeof old != 'undefined'? old.nombre : ''%>">
+                                </div>
+
+                                <div class="input-field" id="nameImput">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" placeholder="Apellido" name = 'apellido' value="<%= typeof old != 'undefined'? old.apellido : ''%>">
+                                </div>
+
+                                <div class="input-field">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" placeholder="Correo Electrónico" name = 'email' value="<%= typeof old != 'undefined'? old.email : ''%>">
+                                </div>
+
+                                <div class="input-field" id="nameImput">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" placeholder="Categoria" name = 'categoria' value="<%= typeof old != 'undefined'? old.categoria : ''%>">
+                                </div>
+
+
+                                <div class="input-field">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="password"  name ='password' placeholder="Contraseña" >
+                                </div>
+
+                                <div class="input-field">
+                                    <i class="fa-solid fa-unlock-keyhole"></i>
+                                    <input type="password" name ='confirmar_password' placeholder="Confirmar Contraseña" >
+                                </div>
+
+                                <div class="input-field" id="nameImput">
+                                    <i class="fa-solid fa-user"></i>
+                                    <label class="input-field">Foto de perfil</label>
+                                    <input type="file"  name = 'foto'>
+                                </div>
+
+                                
+
+                                <p>¿Ya tenés una cuenta? <a href="#">"Ingresa aquí"</a></p>
+                            </div>
+
+                            <div class="btn-field">
+                                <button id="signUp" type="button">Cancelar</button>
+                                <button id="signIn" type="submit" class="disable">Registrarme</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+            </main>
+
+
+
+
+
+
+            <%-include("../partials/footer")%>
+    </body>
+
+</html>
